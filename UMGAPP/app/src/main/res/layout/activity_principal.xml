@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_fondo">
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="1dp">
+
+            <TextView
+                android:id="@+id/txtcorreo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btncerrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cerrar Sesion"
+                    />
+
+                <Button
+                    android:id="@+id/btnsuscribir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Suscribir" />
+
+                <Button
+                    android:id="@+id/btnrecycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ver Recycler"
+                    />
+
+                <Button
+                    android:id="@+id/btnve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ve" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnexpandirbarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:elevation="6dp"
+        android:src="@drawable/icbackarrow"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btncerrarbarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:elevation="6dp"
+        android:src="@drawable/icforwardarrow"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+        />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnbarra1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:elevation="6dp"
+            android:src="@drawable/icbackarrow"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            app:pressedTranslationZ="12dp"
+            android:visibility="invisible"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnbarra2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="70dp"
+            android:elevation="6dp"
+            android:src="@drawable/icbackarrow"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            app:pressedTranslationZ="12dp"
+            android:visibility="invisible"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnbarra3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="124dp"
+            android:elevation="6dp"
+            android:src="@drawable/icbackarrow"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            app:pressedTranslationZ="12dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnbarra4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="174dp"
+            android:elevation="6dp"
+            android:src="@drawable/icbackarrow"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            app:pressedTranslationZ="12dp"
+            android:visibility="invisible"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

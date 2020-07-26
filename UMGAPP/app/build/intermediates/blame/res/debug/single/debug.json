@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registro.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\activity_registro.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient2.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\gradient2.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icforwardarrownaranja.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\icforwardarrownaranja.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_perfil.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\perfil.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinnervespetino_bg.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\spinnervespetino_bg.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vacaciones.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\vacaciones.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim_barra_cerrada.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\anim\\barra_cerrada.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinner_bg.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\spinner_bg.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim_barra_extendida.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\anim\\barra_extendida.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fecha_examenes.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\fecha_examenes.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mixtoicon.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\mixtoicon.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_fondo.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\gradient_fondo.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_asignaciones.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\view_asignaciones.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vespertinomoon.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\vespertinomoon.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icforwardarrow.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\icforwardarrow.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_principal.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\activity_principal.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cursos.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\activity_cursos.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_schedule.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\activity_main_schedule.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinnermixto_bg.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\spinnermixto_bg.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_anuncios.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\activity_anuncios.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_matutinosun.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\matutinosun.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reunion.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\reunion.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_capacitacion.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\capacitacion.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icbackarrow.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\icbackarrow.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_fila.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\layout\\fila.xml"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow.xml.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\ic_arrow.xml"
+    }
+]

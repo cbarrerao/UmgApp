@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSchedule">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_fondo">
+
+        <LinearLayout
+            android:id="@+id/linearPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/gradient2"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtJornada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Jornadas"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearMatutina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearPerfil"
+            android:layout_marginTop="23dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/linearsubMatutina"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMatutina"
+                    android:layout_width="350dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"
+                    android:text="Matutino" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtMatutina"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearsubMatutina"
+                android:visibility="gone"
+                android:text="Matutino" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearVespertina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearMatutina"
+            android:layout_marginTop="23dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/linearsubVespertina"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnVespertina"
+                    android:layout_width="350dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinnervespetino_bg"
+                    android:text="Vespertino" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtVespertina"
+                android:layout_below="@+id/linearsubVespertina"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vespertino" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearMixta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearVespertina"
+            android:layout_marginTop="23dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/linearsubMixta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMixta"
+                    android:layout_width="350dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinnermixto_bg"
+                    android:text="MIxto" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtMixta"
+                android:layout_below="@+id/linearsubMixta"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MIxta" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
