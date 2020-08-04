@@ -99,6 +99,8 @@ class Registro : AppCompatActivity() {
             }else if(txtcodcat.text.isEmpty()){
                 Toast.makeText(this, "Falta ingresar el codigo de catedratico", Toast.LENGTH_SHORT).show()
                 txtcodcat.requestFocus()
+            }else if(idsede == ""){
+                Toast.makeText(this, "Falta seleccionar su sede principal", Toast.LENGTH_SHORT).show()
             }else{
                 if(txtcorreo.text.endsWith("@miumg.edu.gt")){
                     if(txtcontra.text.length>=6){
@@ -130,7 +132,8 @@ class Registro : AppCompatActivity() {
                                                         "Apellidos" to txtapellidos.text.toString(),
                                                         "Codigo" to txtcodcat.text.toString(),
                                                         "Titulo" to txttitulo.text.toString(),
-                                                        "Sede" to idsede
+                                                        "Sede" to idsede,
+                                                        "Suscripciones" to "Gen"
                                                     )
                                                     val db= FirebaseFirestore.getInstance()
                                                     db.collection("usuarios").document(user?.uid.toString()).set(usuario).addOnSuccessListener { documentReference ->
@@ -167,7 +170,7 @@ class Registro : AppCompatActivity() {
             ?.addOnCompleteListener(this){
                     task ->
                 if(task.isComplete){
-                    Toast.makeText(this, "Email de verificacion enviado", Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(this, "Email de verificacion enviado", Toast.LENGTH_SHORT).show()
                 }else{
                     Toast.makeText(this, "Error al enviar email de verificacion", Toast.LENGTH_SHORT).show()
                 }

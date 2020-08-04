@@ -1,9 +1,11 @@
 package com.example.umgapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -14,14 +16,56 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.QueryDocumentSnapshot
 import kotlinx.android.synthetic.main.activity_anuncios.*
+import kotlinx.android.synthetic.main.activity_main_schedule.*
 import kotlinx.android.synthetic.main.activity_registro.*
 
 class Anuncios : AppCompatActivity() {
-
+    var extendida = false
     var suscelegida:String =""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anuncios)
+
+        val barraabierta= AnimationUtils.loadAnimation(this,R.anim.barra_extendida)
+        val barracerrada= AnimationUtils.loadAnimation(this,R.anim.barra_cerrada)
+        btnexpandirbarraan.setOnClickListener{
+            btnexpandirbarraan.startAnimation(barracerrada)
+            contbarraan.startAnimation(barraabierta)
+            extendida=true
+            contbarraan.isClickable=true
+            btnbarraexp1an.isClickable=true
+            btnbarraexp2an.isClickable=true
+            btnbarraexp4an.isClickable=true
+            btnbarraexp3an.isClickable=true
+            btnexpandirbarraan.isClickable=false
+
+
+
+        }
+        contbarraan.setOnClickListener{
+            contbarraan.startAnimation(barracerrada)
+            btnexpandirbarraan.startAnimation(barraabierta)
+            contbarraan.isClickable=false
+            btnbarraexp1an.isClickable=false
+            btnbarraexp2an.isClickable=false
+            btnbarraexp4an.isClickable=false
+            btnbarraexp3an.isClickable=false
+            btnexpandirbarraan.isClickable=true
+            extendida=false
+        }
+        btnbarraexp1an.setOnClickListener{
+            startActivity(Intent(this, MainSchedule::class.java))
+        }
+        btnbarraexp2an.setOnClickListener{
+            startActivity(Intent(this, Anuncios::class.java))
+        }
+        btnbarraexp3an.setOnClickListener{
+            startActivity(Intent(this, Suscripciones::class.java))
+        }
+        btnbarraexp4an.setOnClickListener{
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(this, Inicio::class.java))
+        }
 
         val arrayList=ArrayList<ModeloCard>()
         val db= FirebaseFirestore.getInstance()
@@ -79,7 +123,7 @@ class Anuncios : AppCompatActivity() {
                     }
                     recyclerView.layoutManager=LinearLayoutManager(this@Anuncios)
                     recyclerView.adapter=adaptador
-                }else if(suscelegida=="Sistemas"){
+                }else if(suscelegida=="sistemas"){
                     val adaptador=AdaptadorCarta(arrayList,this@Anuncios)
                     db.collection("Ingenieria").orderBy("Fecha",Query.Direction.DESCENDING).get().addOnCompleteListener() {
                         if(it.isSuccessful){

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\bryan\\Desktop\\UmgApp\\UMGAPP\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Yavhé Orozco\\.gradle\\caches\\transforms-2\\files-2.1\\195d7dd2db3fd1816ce779cd8fd1e486\\appcompat-1.1.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\bryan\\.gradle\\caches\\transforms-2\\files-2.1\\195d7dd2db3fd1816ce779cd8fd1e486\\appcompat-1.1.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Yavhé Orozco\\.gradle\\caches\\transforms-2\\files-2.1\\7e0833c44cb4015b204467edbea755c1\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\bryan\\.gradle\\caches\\transforms-2\\files-2.1\\7e0833c44cb4015b204467edbea755c1\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Yavhé Orozco\\.gradle\\caches\\transforms-2\\files-2.1\\596005408f103e599d10ffd23c63373f\\material-1.2.0-alpha01\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\bryan\\.gradle\\caches\\transforms-2\\files-2.1\\596005408f103e599d10ffd23c63373f\\material-1.2.0-alpha01\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,6,9,12,16,19",
                         "startColumns": "4,4,4,4,4,4",

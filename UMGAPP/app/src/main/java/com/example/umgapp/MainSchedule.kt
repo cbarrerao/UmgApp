@@ -6,13 +6,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.QueryDocumentSnapshot
+import com.google.firebase.firestore.SetOptions
+import com.google.firebase.messaging.FirebaseMessaging
 import io.grpc.NameResolver
 import kotlinx.android.synthetic.main.activity_main_schedule.*
 import kotlinx.android.synthetic.main.activity_main_schedule.recyclerMatutina
@@ -22,7 +26,7 @@ import kotlin.math.log
 
 
 class MainSchedule : AppCompatActivity() {
-
+    var extendida = false
     private val lista:ArrayList<Asignacion> = ArrayList()
     private val listaVespertina:ArrayList<Asignacion> = ArrayList()
     private val listaMixta:ArrayList<Asignacion> = ArrayList()
@@ -32,7 +36,46 @@ class MainSchedule : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_schedule)
+        val barraabierta= AnimationUtils.loadAnimation(this,R.anim.barra_extendida)
+        val barracerrada= AnimationUtils.loadAnimation(this,R.anim.barra_cerrada)
+        btnexpandirbarraperfil.setOnClickListener{
+            btnexpandirbarraperfil.startAnimation(barracerrada)
+            contbarraperfil.startAnimation(barraabierta)
+            extendida=true
+            contbarraperfil.isClickable=true
+            btnbarraexp1perfil.isClickable=true
+            btnbarraexp2perfil.isClickable=true
+            btnbarraexp4perfil.isClickable=true
+            btnbarraexp3perfil.isClickable=true
+            btnexpandirbarraperfil.isClickable=false
 
+
+
+        }
+        contbarraperfil.setOnClickListener{
+            contbarraperfil.startAnimation(barracerrada)
+            btnexpandirbarraperfil.startAnimation(barraabierta)
+            contbarraperfil.isClickable=false
+            btnbarraexp1perfil.isClickable=false
+            btnbarraexp2perfil.isClickable=false
+            btnbarraexp4perfil.isClickable=false
+            btnbarraexp3perfil.isClickable=false
+            btnexpandirbarraperfil.isClickable=true
+            extendida=false
+        }
+        btnbarraexp1perfil.setOnClickListener{
+            startActivity(Intent(this, MainSchedule::class.java))
+        }
+        btnbarraexp2perfil.setOnClickListener{
+            startActivity(Intent(this, Anuncios::class.java))
+        }
+        btnbarraexp3perfil.setOnClickListener{
+            startActivity(Intent(this, Suscripciones::class.java))
+        }
+        btnbarraexp4perfil.setOnClickListener{
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(this, Inicio::class.java))
+        }
 
         recyclerMatutina.layoutManager = GridLayoutManager(this,1)
         recyclerMatutina.adapter = adapterAsignacion
@@ -48,7 +91,7 @@ class MainSchedule : AppCompatActivity() {
         var userid = FirebaseAuth.getInstance().currentUser?.uid
         var codigoraro=""
 
-        db.collection("usuarios").document(userid.toString()).addSnapshotListener{ snapshot, e ->
+        /*db.collection("usuarios").document(userid.toString()).addSnapshotListener{ snapshot, e ->
             if (e!= null){
                 print("error en codigo usuario")
             }
@@ -57,6 +100,16 @@ class MainSchedule : AppCompatActivity() {
             val Apellidos=snapshot?.get("Apellidos") as String
             val Codigo = snapshot?.get("Codigo") as String
             val Titulo = snapshot?.get("Titulo") as String
+            val Susc = snapshot?.get("Suscripciones") as String
+            if(Susc == "Gen"){
+                val data = hashMapOf("Suscripciones" to "General")
+
+                db.collection("usuarios").document(userid.toString())
+                    .set(data, SetOptions.merge())
+                    .addOnSuccessListener {
+                        //FirebaseMessaging.getInstance().subscribeToTopic("General")
+                    }
+            }
             txtTitNombre.setText("Titulo ")
             txtNombre.setText("$Nombres " + "$Apellidos")
             txtTitTitulo.setText("Titulo ")
@@ -66,7 +119,7 @@ class MainSchedule : AppCompatActivity() {
             println("CODIGOOOOOOOOOOOOOOOOOOOOOOOOO: $codigoraro")
             //proofcode.setText(codigoraro)
 
-        }
+        }*/
 
 
 

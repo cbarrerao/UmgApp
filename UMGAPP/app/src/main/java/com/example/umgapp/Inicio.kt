@@ -19,7 +19,7 @@ class Inicio : AppCompatActivity() {
         val currentuser = FirebaseAuth.getInstance().currentUser
         if(currentuser!=null){
             Toast.makeText(this, "hay usuario dentro", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, Principal::class.java))
+            startActivity(Intent(this, MainSchedule::class.java))
 
         }else{
             Toast.makeText(this, "no hay usuario dentro", Toast.LENGTH_SHORT).show()
@@ -41,7 +41,7 @@ class Inicio : AppCompatActivity() {
                     ).addOnCompleteListener {
 
                         if (it.isSuccessful) {
-                            startActivity(Intent(this, Principal::class.java).apply {
+                            startActivity(Intent(this, MainSchedule::class.java).apply {
                                 putExtra("correo", txtcorreologin.text.toString())
                             })
                         } else {

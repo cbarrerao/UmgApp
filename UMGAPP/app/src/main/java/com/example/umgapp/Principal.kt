@@ -20,7 +20,7 @@ class Principal : AppCompatActivity() {
         val correo: String?= bundle?.getString("correo")
         val barraabierta= AnimationUtils.loadAnimation(this,R.anim.barra_extendida)
         val barracerrada= AnimationUtils.loadAnimation(this,R.anim.barra_cerrada)
-        btnexpandirbarra.setOnClickListener{
+        /*btnexpandirbarraperfil.setOnClickListener{
             btnexpandirbarra.startAnimation(barracerrada)
             btnbarra1.startAnimation(barraabierta)
             btnbarra2.startAnimation(barraabierta)
@@ -52,7 +52,7 @@ class Principal : AppCompatActivity() {
         }
         btnbarra1.setOnClickListener{
             Toast.makeText(this, "se apacho botton barrra", Toast.LENGTH_SHORT).show()
-        }
+        }*/
         setup(correo ?: "")
 
     }

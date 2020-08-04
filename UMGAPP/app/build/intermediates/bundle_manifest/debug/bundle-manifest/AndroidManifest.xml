@@ -25,6 +25,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.umgapp.Suscripciones" />
         <activity android:name="com.example.umgapp.MainSchedule" />
         <activity android:name="com.example.umgapp.Profile" />
         <activity android:name="com.example.umgapp.Cursos" />
