@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/brightness_4/baseline_brightness_4_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/person/baseline_person_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,8 +33,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="cf4f0c" />
-                            <entry key="outputName" value="mixtoicon" />
+                            <entry key="outputName" value="perfilpeople" />
                             <entry key="sourceFile" value="C:\ALLProjectAndroid\FINAL\UMGAPP" />
                           </map>
                         </option>

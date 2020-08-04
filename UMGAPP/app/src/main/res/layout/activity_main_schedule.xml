@@ -33,6 +33,112 @@
 
                 />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtJornada"
+            android:background="@drawable/gradient_fondo"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgIcnAn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/perfilpeople"
+                    app:civ_border_color="@color/colorPrimary" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtTitNombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+                        <TextView
+                            android:id="@+id/txtTitTitulo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+                        <TextView
+                            android:id="@+id/txtTitCodigo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtNombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+                        <TextView
+                            android:id="@+id/txtTitulo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+                        <TextView
+                            android:id="@+id/txtCodigo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -64,9 +170,18 @@
                 android:id="@+id/txtMatutina"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
                 android:layout_below="@+id/linearsubMatutina"
                 android:visibility="gone"
                 android:text="Matutino" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMatutina"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/gradient_fondo"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                tools:visibility="gone" />
 
         </LinearLayout>
 
@@ -102,7 +217,16 @@
                 android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:text="Vespertino" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerVespertina"
+                android:background="@drawable/gradient_fondo"
+                android:layout_marginLeft="30dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                tools:visibility="gone" />
 
         </LinearLayout>
 
@@ -137,12 +261,25 @@
                 android:layout_below="@+id/linearsubMixta"
                 android:visibility="gone"
                 android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
                 android:layout_height="wrap_content"
                 android:text="MIxta" />
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMixto"
+                android:background="@drawable/gradient_fondo"
+                android:layout_marginLeft="30dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                tools:visibility="gone" />
+
+            <TextView
+                android:id="@+id/proofcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:visibility="invisible" />
+
         </LinearLayout>
-
-
 
 
     </RelativeLayout>

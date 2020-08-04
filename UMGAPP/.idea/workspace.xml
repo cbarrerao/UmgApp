@@ -5,6 +5,9 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1d6d4241-58cf-473d-ba3b-616580c87119" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +33,8 @@
       <list>
         <option value="Kotlin File" />
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
         <option value="resourceFile" />
       </list>
     </option>
@@ -134,25 +137,49 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595534703530">
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596502411958">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595534703530" />
-    <state x="1020" y="298" key="AndroidCreateResourceFileDialog" timestamp="1595787176113">
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1596502411958" />
+    <state x="1020" y="298" key="AndroidCreateResourceFileDialog" timestamp="1596486050973">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1020" y="298" key="AndroidCreateResourceFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595787176113" />
+    <state x="1020" y="298" key="AndroidCreateResourceFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1596486050973" />
+    <state x="640" y="295" key="Downloadable.Font.Dialog.Size" timestamp="1596500455671">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="640" y="295" key="Downloadable.Font.Dialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1596500455671" />
     <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1595781675441">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1595781675441" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1595920401266">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1595920401266" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1595920401266">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1595920401266" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1595920401265">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1595920401265" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1595920401266">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1595920401266" />
+    <state x="922" y="182" key="SettingsEditor" timestamp="1595966796028">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="922" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1595966796028" />
     <state x="776" y="318" key="chooseDestDirectoryDialog" timestamp="1595785774322">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="776" y="318" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595785774322" />
-    <state x="1136" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1595749637170">
+    <state x="1136" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1596502671126">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1136" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1595749637170" />
+    <state x="1136" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1596502671126" />
   </component>
 </project>

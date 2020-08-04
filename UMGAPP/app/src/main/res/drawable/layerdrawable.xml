@@ -1,0 +1,4 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/upimage" />
+    <item android:drawable="@drawable/starticon" android:text="@string/app_name" android:width="2000dp" android:gravity="center" android:height="2000dp "/>
+</layer-list>

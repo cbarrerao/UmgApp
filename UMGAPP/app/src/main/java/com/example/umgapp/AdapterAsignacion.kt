@@ -23,21 +23,17 @@ class AdapterAsignacion (val lista:ArrayList<Asignacion>, val context: Context) 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.Dias.text=lista[position].Dias
-        holder.HoraInico.text=lista[position].HoraInicio
-        holder.HoraFin.text=lista[position].HoraFin
-        holder.IdCurso.text=lista[position].IdCurso
-        holder.Salon.text=lista[position].Salon
-        holder.Seccion.text=lista[position].Seccion
+        holder.Curso.text=lista[position].Curso
+        holder.Dia.text=lista[position].Dia
+        holder.Hora.text=lista[position].Hora
+
     }
 
     class ViewHolder(val view:View) : RecyclerView.ViewHolder(view){
-        val Dias = view.textViewDias
-        val HoraInico = view.textViewHoraInicio
-        val HoraFin = view.textViewHoraFin
-        val IdCurso = view.textViewCurso
-        val Salon = view.textViewSalon
-        val Seccion = view.textViewSeccion
+        val Curso = view.txtCurso
+        val Dia = view.txtDia
+        val Hora = view.txtHora
+
     }
 
 }

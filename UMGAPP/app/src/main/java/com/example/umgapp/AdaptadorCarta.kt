@@ -1,7 +1,6 @@
 package com.example.umgapp
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 import kotlinx.android.synthetic.main.fila.view.*
-import java.io.File
 
 
 class AdaptadorCarta(val arrayList: ArrayList<ModeloCard>, val context: Context):
@@ -17,7 +15,7 @@ class AdaptadorCarta(val arrayList: ArrayList<ModeloCard>, val context: Context)
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
 
         fun bindItems(modeloCard: ModeloCard){
-            itemView.txtTituloAn.text=modeloCard.titulo
+            itemView.txtNombre.text=modeloCard.titulo
             //itemView.descripcionIV.text=modeloCard.descripcion
             itemView.txtMensajeAn.text=modeloCard.descripcion
             if (modeloCard.tipoanuncio == "Reunión"){
