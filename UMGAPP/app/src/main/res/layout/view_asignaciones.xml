@@ -40,11 +40,6 @@
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
-            <TextView
-                android:id="@+id/txtVistaDia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="VistaDia" />
         </LinearLayout>
     </LinearLayout>
  </androidx.constraintlayout.widget.ConstraintLayout>

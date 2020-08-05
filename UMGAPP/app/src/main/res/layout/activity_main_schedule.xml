@@ -15,11 +15,11 @@
             android:id="@+id/linearPerfil"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            app:layout_constraintTop_toTopOf="parent"
             android:background="@drawable/gradient2"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <EditText
+            <TextView
                 android:id="@+id/txtJornada"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -27,119 +27,134 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="50dp"
                 android:ems="10"
-                android:inputType="textPersonName"
                 android:text="Jornadas"
                 android:textAlignment="center"
                 android:textColor="@color/blanco"
+                android:textSize="26sp" />
 
-                />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtJornada"
-            android:background="@drawable/gradient_fondo"
-            android:layout_marginTop="45dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="380dp"
+                android:layout_height="3dp"
+                android:layout_below="@+id/textView"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/gradient_fondo" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/imgIcnAn"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/perfilpeople"
-                    app:civ_border_color="@color/colorPrimary" />
-
-                <Space
-                    android:layout_width="10dp"
-                    android:layout_height="match_parent" />
+                android:layout_height="135dp"
+                android:layout_below="@+id/txtJornada"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/gradient_fondo"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgIcnAn"
+                        android:layout_width="45dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/perfilpeople"
+                        app:civ_border_color="#FB6435" />
 
-                        <TextView
-                            android:id="@+id/txtTitNombre"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <Space
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp" />
-
-                        <TextView
-                            android:id="@+id/txtTitTitulo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <Space
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp" />
-
-                        <TextView
-                            android:id="@+id/txtTitCodigo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
+                    <Space
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_width="317dp"
+                        android:layout_height="115dp"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/txtNombre"
-                            android:layout_width="match_parent"
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="14sp" />
+                            android:orientation="vertical">
 
-                        <Space
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp" />
+                            <TextView
+                                android:id="@+id/txtTitNombre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:background="#FBFEFF"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/txtTitulo"
-                            android:layout_width="match_parent"
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp" />
+
+                            <TextView
+                                android:id="@+id/txtTitTitulo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp" />
+
+                            <TextView
+                                android:id="@+id/txtTitCodigo"
+                                android:layout_width="67dp"
+                                android:layout_height="35dp"
+                                android:background="#EEF2F3"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="317dp"
                             android:layout_height="wrap_content"
-                            android:textSize="14sp" />
+                            android:orientation="vertical">
 
-                        <Space
-                            android:layout_width="match_parent"
-                            android:layout_height="10dp" />
 
-                        <TextView
-                            android:id="@+id/txtCodigo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/txtNombre"
+                                android:layout_width="317dp"
+                                android:layout_height="35dp"
+                                android:background="#FBFEFF"
+                                android:textSize="14sp" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp" />
+
+                            <TextView
+                                android:id="@+id/txtTitulo"
+                                android:layout_width="317dp"
+                                android:layout_height="35dp"
+                                android:textSize="14sp" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp" />
+
+                            <TextView
+                                android:id="@+id/txtCodigo"
+                                android:layout_width="317dp"
+                                android:layout_height="35dp"
+                                android:background="#EEF2F3"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
 
+
             </LinearLayout>
-
-
-        </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -171,17 +186,17 @@
                 android:id="@+id/txtMatutina"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
                 android:layout_below="@+id/linearsubMatutina"
-                android:visibility="gone"
-                android:text="Matutino" />
+                android:layout_marginLeft="30dp"
+                android:text="Matutino"
+                android:visibility="gone" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerMatutina"
-                android:layout_marginLeft="30dp"
-                android:background="@drawable/gradient_fondo"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/gradient_fondo"
                 tools:visibility="gone" />
 
         </LinearLayout>
@@ -214,19 +229,19 @@
 
             <TextView
                 android:id="@+id/txtVespertina"
-                android:layout_below="@+id/linearsubVespertina"
-                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/linearsubVespertina"
                 android:layout_marginLeft="30dp"
-                android:text="Vespertino" />
+                android:text="Vespertino"
+                android:visibility="gone" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerVespertina"
-                android:background="@drawable/gradient_fondo"
-                android:layout_marginLeft="30dp"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/gradient_fondo"
                 tools:visibility="gone" />
 
         </LinearLayout>
@@ -259,19 +274,19 @@
 
             <TextView
                 android:id="@+id/txtMixta"
-                android:layout_below="@+id/linearsubMixta"
-                android:visibility="gone"
                 android:layout_width="match_parent"
-                android:layout_marginLeft="30dp"
                 android:layout_height="wrap_content"
-                android:text="MIxta" />
+                android:layout_below="@+id/linearsubMixta"
+                android:layout_marginLeft="30dp"
+                android:text="MIxta"
+                android:visibility="gone" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerMixto"
-                android:background="@drawable/gradient_fondo"
-                android:layout_marginLeft="30dp"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/gradient_fondo"
                 tools:visibility="gone" />
 
             <TextView
@@ -282,6 +297,7 @@
 
         </LinearLayout>
     </RelativeLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnexpandirbarraperfil"
         android:layout_width="wrap_content"
@@ -290,7 +306,7 @@
         android:layout_margin="16dp"
         android:elevation="6dp"
         android:src="@drawable/icbackarrow"
-        app:backgroundTint="@color/colorPrimary"
+        app:backgroundTint="#FB6435"
         app:fabSize="normal"
         app:pressedTranslationZ="12dp"/>
 

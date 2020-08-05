@@ -110,11 +110,11 @@ class MainSchedule : AppCompatActivity() {
                         //FirebaseMessaging.getInstance().subscribeToTopic("General")
                     }
             }
-            txtTitNombre.setText("Titulo ")
+            txtTitNombre.setText("  Nombre ")
             txtNombre.setText("$Nombres " + "$Apellidos")
-            txtTitTitulo.setText("Titulo ")
+            txtTitTitulo.setText("  Titulo ")
             txtTitulo.setText("$Titulo")
-            txtTitCodigo.setText("Código ")
+            txtTitCodigo.setText("  Código ")
             txtCodigo.setText("$Codigo")
             println("CODIGOOOOOOOOOOOOOOOOOOOOOOOOO: $codigoraro")
             //proofcode.setText(codigoraro)

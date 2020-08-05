@@ -25,7 +25,6 @@ class Anuncios : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anuncios)
-
         val barraabierta= AnimationUtils.loadAnimation(this,R.anim.barra_extendida)
         val barracerrada= AnimationUtils.loadAnimation(this,R.anim.barra_cerrada)
         btnexpandirbarraan.setOnClickListener{
