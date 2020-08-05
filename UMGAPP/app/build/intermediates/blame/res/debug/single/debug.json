@@ -16,12 +16,12 @@
         "source": "C:\\Users\\bryan\\Desktop\\UmgApp\\UMGAPP\\app\\src\\main\\res\\drawable\\mecanica.png"
     },
     {
-        "merged": "C:\\Users\\bryan\\Desktop\\UmgApp\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\bryan\\Desktop\\UmgApp\\UMGAPP\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\bryan\\Desktop\\UmgApp\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_starticon.png.flat",
         "source": "C:\\Users\\bryan\\Desktop\\UmgApp\\UMGAPP\\app\\src\\main\\res\\drawable\\starticon.png"
+    },
+    {
+        "merged": "C:\\Users\\bryan\\Desktop\\UmgApp\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\bryan\\Desktop\\UmgApp\\UMGAPP\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\bryan\\Desktop\\UmgApp\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mixtoicon.xml.flat",

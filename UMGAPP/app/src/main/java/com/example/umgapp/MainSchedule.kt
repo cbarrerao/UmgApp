@@ -91,7 +91,7 @@ class MainSchedule : AppCompatActivity() {
         var userid = FirebaseAuth.getInstance().currentUser?.uid
         var codigoraro=""
 
-        /*db.collection("usuarios").document(userid.toString()).addSnapshotListener{ snapshot, e ->
+        db.collection("usuarios").document(userid.toString()).addSnapshotListener{ snapshot, e ->
             if (e!= null){
                 print("error en codigo usuario")
             }
@@ -119,7 +119,7 @@ class MainSchedule : AppCompatActivity() {
             println("CODIGOOOOOOOOOOOOOOOOOOOOOOOOO: $codigoraro")
             //proofcode.setText(codigoraro)
 
-        }*/
+        }
 
 
 
