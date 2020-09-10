@@ -93,7 +93,7 @@
             android:layout_marginLeft="85dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btnlogindesign"
-            android:text="Olvidaste tu contraseña?"
+            android:text="¿Olvidaste tu contraseña?"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 

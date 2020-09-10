@@ -122,7 +122,7 @@ class Anuncios : AppCompatActivity() {
                     }
                     recyclerView.layoutManager=LinearLayoutManager(this@Anuncios)
                     recyclerView.adapter=adaptador
-                }else if(suscelegida=="sistemas"){
+                }else if(suscelegida=="Sistemas"){
                     val adaptador=AdaptadorCarta(arrayList,this@Anuncios)
                     db.collection("Ingenieria").orderBy("Fecha",Query.Direction.DESCENDING).get().addOnCompleteListener() {
                         if(it.isSuccessful){

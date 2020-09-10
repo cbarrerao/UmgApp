@@ -7,12 +7,47 @@
     tools:context=".Registro">
 
     <LinearLayout
+        android:id="@+id/linearDesign"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/gradient2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="55dp"
+            android:text="Registro"
+            android:textColor="@color/blanco"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="380dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/textViewR"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/gradient_fondo" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
-        android:layout_marginTop="16dp"
+        android:layout_below="@+id/linearDesign"
+        android:layout_marginTop="170dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/linearDesign"
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/txtcorreo"
@@ -57,7 +92,12 @@
         <Spinner
             android:id="@+id/cmbsedes"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/spinneranuncios"
             android:foregroundTint="#E8E0E0"
             android:visibility="visible" />
 

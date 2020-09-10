@@ -12,12 +12,12 @@
         "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\quimica.png"
     },
     {
-        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_password.png.flat",
-        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\password.png"
-    },
-    {
         "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_industrial.png.flat",
         "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\industrial.png"
+    },
+    {
+        "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_password.png.flat",
+        "source": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\src\\main\\res\\drawable\\password.png"
     },
     {
         "merged": "C:\\ALLProjectAndroid\\FINAL\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
