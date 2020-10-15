@@ -1,0 +1,294 @@
+[
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_user.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\user.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sistemas.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\sistemas.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_fondo.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\gradient_fondo.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_electrica.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\electrica.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add_naranja.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\add_naranja.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\font_volkhov.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\font\\volkhov.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vespertino.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\vespertino.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\font_adamina.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\font\\adamina.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vacaciones.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\vacaciones.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_upimage.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\upimage.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_quimica.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\quimica.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bio.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\bio.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icbackarrow.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\icbackarrow.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_anuncio_blanco.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\anuncio_blanco.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mixtoicon.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\mixtoicon.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_inputslogin.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\inputslogin.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_suscripciones.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\layout\\activity_suscripciones.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinnermixto_bg.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\spinnermixto_bg.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_starticon.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\starticon.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add_blanco.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\add_blanco.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_principal.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\layout\\activity_principal.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fisica.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\fisica.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fecha_examenes.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\fecha_examenes.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icforwardarrownaranja.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\icforwardarrownaranja.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mate.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\mate.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_capacitacion.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\capacitacion.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_compu.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\compu.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_layerdrawable.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\layerdrawable.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_anuncio_naranja.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\anuncio_naranja.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btnlogindesign.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\btnlogindesign.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_civil.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\civil.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient2.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\gradient2.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mecanica.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\mecanica.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vespertinomoon.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\vespertinomoon.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_perfilpeople.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\perfilpeople.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icforwardarrow.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\icforwardarrow.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinnervespetino_bg.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\spinnervespetino_bg.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sesion.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\sesion.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_nuevo_mensaje.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\layout\\activity_nuevo_mensaje.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_matutinosun.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\matutinosun.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_agro.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\agro.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\ic_arrow.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\font_montserrat.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\font\\montserrat.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinner_bg.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\spinner_bg.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loginpassword.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\loginpassword.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_electronica.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\electronica.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_fila.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\layout\\fila.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_radius.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\radius.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_password.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\password.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spinneranuncios.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\spinneranuncios.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_anuncios.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\layout\\activity_anuncios.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim_barra_cerrada.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\anim\\barra_cerrada.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim_barra_extendida.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\anim\\barra_extendida.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_persona_naranja.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\persona_naranja.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_persona_blanca.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\persona_blanca.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_asignaciones.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\layout\\view_asignaciones.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\font_lato_thin.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\font\\lato_thin.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mixto.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\mixto.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_alimentos.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\alimentos.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registro.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\layout\\activity_registro.xml"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_industrial.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\industrial.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_matutino.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\matutino.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reunion.png.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\drawable\\reunion.png"
+    },
+    {
+        "merged": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_schedule.xml.flat",
+        "source": "D:\\U\\PRACTICAS\\UmgApp-master\\UMGAPP\\app\\src\\main\\res\\layout\\activity_main_schedule.xml"
+    }
+]
