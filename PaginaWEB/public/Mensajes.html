@@ -1,0 +1,123 @@
+<html>
+
+<!------ Include the above in your HEAD tag ---------->
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <link rel="stylesheet" href="Mensajes.css">
+        </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Universidad Mariano Gálvez</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto"> 
+      
+          <li class="nav-item">
+              <a class="nav-link" href="Principal.html">Principal</a>
+            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="logout">Log out</a>
+        </li>
+        
+      </ul>
+    </div>
+    </div>
+  </nav>
+<div class="container">
+<h3 class=" text-center">Mensajes</h3>
+<div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <h4>Recent</h4>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" class="search-bar"  placeholder="Search" >
+                <span class="input-group-addon">
+                <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span> </div>
+            </div>
+          </div>
+          <div class="inbox_chat" id="aChat">
+            <!-- <div class="chat_list active_chat" id="chatGrand">
+             <div class="chat_people">
+                <div class="chat_img"> <img src="https://firebasestorage.googleapis.com/v0/b/appumg-67eca.appspot.com/o/icon.png?alt=media&token=028f100f-e813-4d50-ae9e-fba4dd51bd96" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Bryan Orlando <span class="chat_date">Dec 25</span></h5>
+                  <p>Test 45455454545454</p>
+                </div>
+              </div>
+            </div>-->
+            <div class="chat_list" id="chatMessa">
+              <div class="chat_people">
+                <div class="chat_img">  </div>
+                <div class="chat_ib">
+                   
+                </div>
+              </div>
+            </div>
+        
+             
+          </div>
+        </div>
+        <div class="mesgs">
+          <div class="msg_history" id="msgHistory">
+           
+         <!--AQUI SE ENCONTRARÍAN LOS MENSAJES-->
+           
+          </div>
+          <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" id="mensaje" placeholder="Type a message" />
+              <button class="msg_send_btn" type="button" onclick="saveMessage(document.getElementById('mensaje').value)"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+    </div></div>
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+       
+       
+        <!--FIREBASE SCRIPTS-->
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+         <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>     
+         <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAOn098HdqLw8r5xilJjbEet6gGi-sDB6o",
+        authDomain: "appumg-67eca.firebaseapp.com",
+        databaseURL: "https://appumg-67eca.firebaseio.com",
+        projectId: "appumg-67eca",
+        storageBucket: "appumg-67eca.appspot.com",
+        messagingSenderId: "165405716157",
+        appId: "1:165405716157:web:db33d21b8d681fbb6bd1d4",
+        measurementId: "G-1YSKR4GGL6"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db = firebase.firestore();
+      const auth = firebase.auth();
+      const fs = firebase.firestore();  
+      const storageRef = firebase.storage().ref();
+    </script>
+    <script src="chat.js"></script>
+    </body>
+    </html>

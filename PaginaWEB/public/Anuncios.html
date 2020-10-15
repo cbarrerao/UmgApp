@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>ANUNCIOS!</title>
+  </head>
+  <body> 
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Universidad Mariano Gálvez</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto"> 
+        
+            <li class="nav-item">
+                <a class="nav-link" href="Principal.html">Principal</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logout">Log out</a>
+          </li>
+          
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <div class="container">
+        <h1> ANUNCIOS</h1>
+        
+        <form>
+            <div class="form-group">
+              <label for="inputState">Tipo de anuncio</label>
+                <select class="form-control" id="cmbTipoAnuncio" name="cmbTipoAnuncio">
+                  <option selected>Seleccione el tipo de anuncio</option> 
+                  <option>Reunión</option>
+                  <option>Capacitaciones</option> 
+                  <option>Fechas de exámenes</option> 
+                  <option>Vacaciones</option> 
+                  <option>Entrega de Combos</option> 
+                </select><br>
+
+                <label for="inputState">Carrera</label>
+                <select class="form-control" id="cmbCarreras" name="cmbCarreras">
+                  <option selected>Seleccione una carrera</option> 
+                  <option>Anuncios</option>
+                  <option>Sistemas</option> 
+                  <option>Civil</option> 
+                  <option>Electronica</option> 
+                  <option>Electrica</option> 
+                  <option>Ingenieria</option> 
+                </select>
+              </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Título</label>
+              <input class="form-control" id="txtTitulo" placeholder="Ingresar un Título">
+              
+            </div>
+           
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Contenido</label>
+                <textarea class="form-control" id="txtContenido" rows="4" placeholder="Contenido"></textarea>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="addImagen" value="option1" onclick="verificacion()">
+              <label class="form-check-label" for="exampleRadios1">
+                Adjuntar Imagen
+              </label><br>
+              <input class="form-check-input" type="radio" name="exampleRadios" id="noAddImagen" value="option1" onclick="verificacion2()">
+              <label class="form-check-label" for="exampleRadios1">
+                No Adjuntar Imagen
+              </label>
+            </div><br><br>
+
+            <div class="form-group" style="visibility: hidden" id="grupoAgregar">
+                <label for="exampleFormControlFile1" >Seleccionar Imagen</label>
+                <input type="file" class="form-control-file" id="fileArchivo">
+                
+                <div class="progress" style="visibility: hidden" id="barrasNestle">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100" id="barraProgresista">
+                      <span class="sr-only">70% Complete</span>
+                    </div>
+                </div>
+
+                
+            </div>
+             
+            <div>
+                <img id="Imagen-de-firebase" style="visibility: hidden" alt="Cargando..." width="350" height="350" class="img-thumbnail">
+            </div>
+            
+    
+          </form>
+
+          <button type="submit" class="btn btn-primary" onclick="guardarAnuncio()">Agregar Anuncio</button>
+          
+    </div>
+
+       
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   
+   
+    <!--FIREBASE SCRIPTS-->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>     
+     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAOn098HdqLw8r5xilJjbEet6gGi-sDB6o",
+    authDomain: "appumg-67eca.firebaseapp.com",
+    databaseURL: "https://appumg-67eca.firebaseio.com",
+    projectId: "appumg-67eca",
+    storageBucket: "appumg-67eca.appspot.com",
+    messagingSenderId: "165405716157",
+    appId: "1:165405716157:web:db33d21b8d681fbb6bd1d4",
+    measurementId: "G-1YSKR4GGL6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+  const auth = firebase.auth();
+  const fs = firebase.firestore();  
+  const storageRef = firebase.storage().ref();
+</script>
+<script src="Anuncios.js"></script>
+  </body>
+</html>

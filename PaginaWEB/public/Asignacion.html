@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Asignaciones!</title>
+  </head>
+  <body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Universidad Mariano Gálvez</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto"> 
+        
+          <li class="nav-item">
+            <a class="nav-link" href="Principal.html">Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logout">Log out</a>
+          </li>
+          
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+      <div class="container">
+        <h1> Agregar Asignaciones</h1><br><br>
+        <h5>Sede</h5>
+        <select id="codigoSede" name="codigoSede"  style="visibility: hidden" disabled="true"></select>
+        <select class="form-control" id="sede" name="sede" onchange="btnSede();"></select><br>
+        <h5>Carrera</h5>
+        <select class="form-control" id="cmbCode" name="cmbCode" disabled='true'></select>
+        <select class="form-control" id="cmbCarrera" name="cmbCarrera" onchange="btnCarrera()"></select><br>
+        <h5>Semestre</h5>
+        <select class="form-control" id="cmbSemestre" name="cmbSemestre" onchange="btnSemestre();">
+          <option>Seleccione Semestre</option>
+          <option>Primero</option>
+          <option>Segundo</option>
+          <option>Tercero</option>
+          <option>Cuarto</option>
+          <option>Quinto</option>
+          <option>Sexto</option>
+          <option>Septimo</option>
+          <option>Octavo</option>
+          <option>Noveno</option>
+          <option>Decimo</option>
+          <option>Decimo Primero</option>
+          <option>Decimo Segundo</option>
+        </select> <br>
+        <h5>Curso</h5>
+        <select class="form-control" id="cmbCurso" name="curso"></select><br>
+        <h5>Horario</h5>
+        <select class="form-control" id="horario" name="horario"></select><br>
+        
+        <fieldset>
+            <legend>HORAS DE INICIO Y FIN DE LA CLASE</legend>
+        </fieldset>
+
+        <div class="form-row">
+
+        <div class="form-group col-md-4">
+          <label for="inputState">Día</label>
+          <select class="form-control" id="cmbDias" name="cmbDias">
+            <option selected>Seleccione un día</option> 
+            <option>Lunes</option> 
+            <option>Martes</option> 
+            <option>Miercoles</option> 
+            <option>Jueves</option> 
+            <option>Viernes</option> 
+            <option>Sábado</option> </select>
+        </div>
+
+        <div class="form-group col-md-1">
+          <label for="inputState">HoraInicio</label><br>
+          <input type="time" name="minumber" id="mihorainicio">
+        </div>
+
+      
+        <div class="form-group col-md-1">
+          <label for="inputState">HoraFin</label><br>
+          <input type="time" name="minumber" id="mihorafin">
+        </div>
+
+        <div class="form-group col-md-2"><br>
+          <button type="submit" class="btn btn-primary" onclick="btnHorario()">Agregar</button>
+        </div>
+
+      </div>
+
+      <table class="table my-3" style="visibility: hidden" id="tablaMayor">
+        <thead>
+          <tr>
+            <th scope="col">Dia</th>
+            <th scope="col">HoraInicio</th>
+            <th scope="col">HoraFin</th>
+          </tr>
+        </thead>
+        <tbody id="tablaDias">                        
+        </tbody>
+      </table>
+
+      <div class="form-group col-md-4">
+       <input type="days" name="myday" id="dayDelete" style="visibility: hidden" placeholder="Día a eliminar">
+        <button type="submit" class="btn btn-primary" id="eliminarHorario" style="visibility: hidden" onclick="deleteSchedule()">Eliminar horario</button>
+              
+      </div>
+      
+      <div class="form-group col-md-4"><br>
+        <h5>Catedrático</h5>
+        <select class="form-control" id="cmbCatedraticos" name="cmbCatedraticos" onchange="selectCatedratico()">
+          <option selected>Seleccione al catedrático</option> 
+          </select>
+          <select class="form-control" id="cmbCodeCatedratico" name="cmbCodeCatedratico" disabled="true">
+            <option selected>codigo de catedrático</option> 
+            </select>
+      </div>
+      <br><br><br><br>
+
+      <div class="form-group col-md-4"><br>
+        <button type="submit" class="btn btn-primary" onclick="SaveAllData()">Agregar Asignación</button>
+      </div>
+
+      <br><br>
+      
+      </div>
+          
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+
+    <!--FIREBASE SCRIPTS-->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>     
+     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAOn098HdqLw8r5xilJjbEet6gGi-sDB6o",
+    authDomain: "appumg-67eca.firebaseapp.com",
+    databaseURL: "https://appumg-67eca.firebaseio.com",
+    projectId: "appumg-67eca",
+    storageBucket: "appumg-67eca.appspot.com",
+    messagingSenderId: "165405716157",
+    appId: "1:165405716157:web:db33d21b8d681fbb6bd1d4",
+    measurementId: "G-1YSKR4GGL6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  
+</script>
+  
+    <script src="asignacionesapp.js"></script>
+   
+  </body>
+</html>
