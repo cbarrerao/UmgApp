@@ -10,39 +10,39 @@ signInForm.addEventListener('submit', (e) =>{
 
   //Aqui inicia para sign up
   auth
-      .signInWithEmailAndPassword(email, password)
-      .then(userCredential => {
-        //Clear the form
-        signInForm.reset();
+  .signInWithEmailAndPassword(email, password)
+  .then(userCredential => {
+    //Clear the form
+    signInForm.reset();
 
-        //Close the modal
-        $('#signInModal').modal('hide')
-        console.log('sign in')
-        auth.onAuthStateChanged(user => {
-          if(user){
-            console.log(auth.currentUser.uid);
-            fs.collection("usuarios").doc(auth.currentUser.uid).get().then(function(doc) {
-                if (doc.exists) {
-                  if(doc.data().Cargo == "1"){
-                    onclick=location.href ='Principal.html';
-                  }else{
-                    alert("No tiene los permisos para ingresar");
-                    console.log("NO TIENE PERMISOS");
-                  }
-                } else {
-                    // doc.data() will be undefined in this case
-                    console.log("No such document!");
-                }
-            }).catch(function(error) {
-                console.log("Error getting document:", error);
-            });
-            //onclick=location.href ='Principal.html';
-          }else{
-            console.log('Auth: sign afuera')
-          }
+    //Close the modal
+    $('#signInModal').modal('hide')
+    console.log('sign in')
+    auth.onAuthStateChanged(user => {
+      if(user){
+        console.log(auth.currentUser.uid);
+        fs.collection("usuarios").doc(auth.currentUser.uid).get().then(function(doc) {
+            if (doc.exists) {
+              if(doc.data().Cargo == "1"){
+                onclick=location.href ='Principal.html';
+              }else{
+                alert("No tiene los permisos para ingresar");
+                console.log("NO TIENE PERMISOS");
+              }
+            } else {
+                // doc.data() will be undefined in this case
+                console.log("No such document!");
+            }
+        }).catch(function(error) {
+            console.log("Error getting document:", error);
         });
+        //onclick=location.href ='Principal.html';
+      }else{
+        console.log('Auth: sign afuera')
+      }
+    });
 
-      })
+  })
 
 }); 
 

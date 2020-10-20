@@ -13,6 +13,7 @@ var usuarioPrincipal;
 var usuarioReceptor;
 var uid;
 var eliget;
+var unsubscribed = null;
 
 //Listener Login de la Página
 auth.onAuthStateChanged(user => {
@@ -55,11 +56,12 @@ auth.onAuthStateChanged(user => {
 
 
 function saveMessage(messageText) {
+  
     //Push a new message to Firebase.
     scrolldown(); 
     console.log("Mensaje obtenido: "+messageText + " Receptor: " + usuarioReceptor);
         // Add a new message entry to the database.
-        return firebase.firestore().collection('Mensajes').add({
+          firebase.firestore().collection('Mensajes').add({
           Emisor: Number(usuarioPrincipal),
           Estado: Number(1),
           Fecha: firebase.firestore.FieldValue.serverTimestamp(),
@@ -67,50 +69,72 @@ function saveMessage(messageText) {
           Receptor: Number(usuarioReceptor)
         }).catch(function(error) {
           console.error('Error writing new message to database', error);
-        });        
+        });
+        
   }
   
 
 function eli(eliget){
-
-document.getElementById("msgHistory").innerHTML="";
-console.log("WHAT ELI GETS: "+ eliget);
-
-usuarioReceptor=eliget;
-
-let query = db.collection('Mensajes').orderBy('Fecha', 'asc');
-console.log("USUARIO PRINCIPAL LOGUEADO: " + usuarioPrincipal );
-// Start listening to the query.
- unsubscribed = query.onSnapshot(function(snapshot) {
-  snapshot.docChanges().forEach(function(change) {
-
-    scrolldown();
-    
-    if (change.type === "added") {
-    var message = change.doc.data();    
-    console.log("EMISOR: " + message.Emisor + " RECEPTOR: "+ message.Receptor);
-    
-    if(message.Emisor == usuarioPrincipal && message.Receptor == usuarioReceptor){
-      document.getElementById("msgHistory").innerHTML +=`
-            <div class="outgoing_msg"> 
-            <div class="sent_msg"> 
-            <p>${message.Mensaje}</p>
-            <span class="time_date">${message.Fecha}</span></div></div>`;
-                
-    }else if(message.Emisor == usuarioReceptor && message.Receptor == usuarioPrincipal){
-      document.getElementById("msgHistory").innerHTML +=`
-            <div class="incoming_msg"> 
-            <div class="received_msg"> 
-            <div class="received_withd_msg"> 
-            <p>${message.Mensaje}</p>
-            <span class="time_date">${message.Fecha}</span></div></div></div>`;
-    }
-  }
-      
-  });
-});
+   
+if(unsubscribed == null){
+  retrieveData(eliget);
+}else{
+  unsubscribed();
+  retrieveData(eliget);
 }
 
+
+
+}
+
+function retrieveData(eliget){
+  document.getElementById("msgHistory").innerHTML="";
+  console.log("WHAT ELI GETS: "+ eliget);
+  
+  usuarioReceptor=eliget;
+  
+  document.getElementById("msgHistory").innerHTML="";
+    var query = db.collection('Mensajes').orderBy('Fecha', 'asc');
+    console.log("USUARIO PRINCIPAL LOGUEADO: " + usuarioPrincipal );
+    // Start listening to the query.
+     unsubscribed= query.onSnapshot({ includeMetadataChanges: true }, function(snapshot) {
+      snapshot.docChanges().forEach(function(change) {
+        
+        scrolldown();
+        if (change.type === "added") {
+          var message = change.doc.data();    
+          console.log("EMISOR: " + message.Emisor + " RECEPTOR: "+ message.Receptor);
+        
+        if(message.Emisor == usuarioPrincipal && message.Receptor == usuarioReceptor){
+          document.getElementById("msgHistory").innerHTML +=`
+                <div class="outgoing_msg"> 
+                <div class="sent_msg"> 
+                <p>${message.Mensaje}</p>
+                <span class="time_date">${firebase.firestore.Timestamp.now().toDate()}</span></div></div>`;
+                    
+        }else if(message.Emisor == usuarioReceptor && message.Receptor == usuarioPrincipal){
+          document.getElementById("msgHistory").innerHTML +=`
+                <div class="incoming_msg"> 
+                <div class="received_msg"> 
+                <div class="received_withd_msg"> 
+                <p>${message.Mensaje}</p>
+                <span class="time_date">${firebase.firestore.Timestamp.now().toDate()}</span></div></div></div>`;
+        }
+        }
+        if (change.type === "modified") {
+            console.log("Modified city: ", change.doc.data());
+        }
+        if (change.type === "removed") {
+            console.log("Removed city: ", change.doc.data());
+        }
+    
+        var source = snapshot.metadata.fromCache ? "local cache" : "server";
+              console.log("Data came from " + source);
+      
+          
+      });
+    });  
+}
 
 //Muestra los ultimos mensajes enviados al chat
 function scrolldown(){
