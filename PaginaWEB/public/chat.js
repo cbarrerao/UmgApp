@@ -14,6 +14,8 @@ var usuarioReceptor;
 var uid;
 var eliget;
 var unsubscribed = null;
+const usuariosChat = [];
+var fechaActiva = 0;
 
 //Listener Login de la Página
 auth.onAuthStateChanged(user => {
@@ -49,7 +51,8 @@ auth.onAuthStateChanged(user => {
         <div class="chat_img"> <img src="https://firebasestorage.googleapis.com/v0/b/appumg-67eca.appspot.com/o/icon.png?alt=media&token=028f100f-e813-4d50-ae9e-fba4dd51bd96"alt="sunil"> </div>
         <div class="chat_ib"><h5>${doc.data().Nombres + " "+  doc.data().Apellidos}<span class="chat_date">${"codigo: "+doc.data().Codigo}</span></h5>
         <p></p></div></div></div>`;
-
+        var fullnames= doc.data().Nombres + " " + doc.data().Apellidos;
+        usuariosChat.push({nombre: fullnames ,codigo: doc.data().Codigo});
       });      
     });
 
@@ -57,6 +60,10 @@ auth.onAuthStateChanged(user => {
 
 function saveMessage(messageText) {
   
+  if(messageText==""){
+
+  }else{
+    
     //Push a new message to Firebase.
     scrolldown(); 
     console.log("Mensaje obtenido: "+messageText + " Receptor: " + usuarioReceptor);
@@ -70,7 +77,10 @@ function saveMessage(messageText) {
         }).catch(function(error) {
           console.error('Error writing new message to database', error);
         });
+        document.getElementById('mensaje').value="";
+        fechaActiva = 1;
         
+  }
   }
   
 
@@ -80,11 +90,9 @@ if(unsubscribed == null){
   retrieveData(eliget);
 }else{
   unsubscribed();
+  fechaActiva=0;
   retrieveData(eliget);
 }
-
-
-
 }
 
 function retrieveData(eliget){
@@ -102,7 +110,27 @@ function retrieveData(eliget){
         
         scrolldown();
         if (change.type === "added") {
-          var message = change.doc.data();    
+          if (fechaActiva == 0) {
+            var message = change.doc.data();    
+          console.log("EMISOR: " + message.Emisor + " RECEPTOR: "+ message.Receptor);
+        
+        if(message.Emisor == usuarioPrincipal && message.Receptor == usuarioReceptor){
+          document.getElementById("msgHistory").innerHTML +=`
+                <div class="outgoing_msg"> 
+                <div class="sent_msg"> 
+                <p>${message.Mensaje}</p>
+                <span class="time_date">${message.Fecha.toDate()}</span></div></div>`;
+                    
+        }else if(message.Emisor == usuarioReceptor && message.Receptor == usuarioPrincipal){
+          document.getElementById("msgHistory").innerHTML +=`
+                <div class="incoming_msg"> 
+                <div class="received_msg"> 
+                <div class="received_withd_msg"> 
+                <p>${message.Mensaje}</p>
+                <span class="time_date">${message.Fecha.toDate()}</span></div></div></div>`;
+        }
+          }else{
+            var message = change.doc.data();    
           console.log("EMISOR: " + message.Emisor + " RECEPTOR: "+ message.Receptor);
         
         if(message.Emisor == usuarioPrincipal && message.Receptor == usuarioReceptor){
@@ -120,6 +148,8 @@ function retrieveData(eliget){
                 <p>${message.Mensaje}</p>
                 <span class="time_date">${firebase.firestore.Timestamp.now().toDate()}</span></div></div></div>`;
         }
+          }
+
         }
         if (change.type === "modified") {
             console.log("Modified city: ", change.doc.data());
@@ -142,6 +172,31 @@ function scrolldown(){
   DIV.scrollTop = DIV.scrollHeight;
 }
 
+function busqueda (){
+  alert("Hello");
+}
+
+
+const formulario = document.querySelector('#txtBusqueda');
+const boton = document.querySelector('#btnBusqueda');
+
+const filtrar = () =>{
+document.getElementById("aChat").innerHTML="";
+//console.log(formulario.value);
+const texto = formulario.value.toLowerCase();
+  for(let usuariochat of usuariosChat){
+    let nombre = usuariochat.nombre.toLowerCase(); 
+    //console.log(nombre);
+    if (nombre.indexOf(texto)!==-1) {
+      aChat.innerHTML += `<div class="chat_list" onclick="eli(${usuariochat.codigo});"><div class="chat_people"> <input type="text" value="${usuariochat.codigo}"  hidden>
+          <div class="chat_img"> <img src="https://firebasestorage.googleapis.com/v0/b/appumg-67eca.appspot.com/o/icon.png?alt=media&token=028f100f-e813-4d50-ae9e-fba4dd51bd96"alt="sunil"> </div>
+          <div class="chat_ib"><h5>${usuariochat.nombre}<span class="chat_date">${"codigo: "+usuariochat.codigo}</span></h5>
+          <p></p></div></div></div>`;
+    } 
+  }
+}
+formulario.addEventListener('keyup',filtrar)
+filtrar();
 
 
 //Parte importante
